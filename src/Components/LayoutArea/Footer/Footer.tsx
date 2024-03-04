@@ -1,7 +1,7 @@
 import { FaRegCopyright } from "react-icons/fa6";
 import Menu from "../../NavArea/Menu/Menu";
 import "./Footer.scss";
-import FooterIcons from "./FooterIcons/FooterIcons";
+import SocialIcons from "../../Common/SocialIcons/SocialIcons";
 
 
 function Footer(): JSX.Element {
@@ -13,7 +13,7 @@ function Footer(): JSX.Element {
             </div>
             <div>
                 <Menu />
-                <FooterIcons />
+                <SocialIcons />
             </div>
         </div>
     );

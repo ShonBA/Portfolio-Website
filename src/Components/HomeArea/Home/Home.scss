@@ -1,4 +1,96 @@
 .Home {
+    background-color: var(--bg);
+
+    .homeParaContainer {
+        height: 90vh;
+        background-image: url("../../../Assets/Images/home-bg.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
 
+        h1 {
+            font-size: 64px;
+            margin: 0 20vh;
+        }
+
+        h6 {
+            font-size: 32px;
+            padding: 0 20vh;
+        }
+
+        a {
+            border: 1px solid;
+            margin: 0 auto;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: var(--white);
+            font-size: x-large;
+            background-color: var(--btn);
+            border-radius: 15px;
+        }
+
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid #333;
+            border-radius: 60px;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                width: 5px;
+                height: 5px;
+                position: absolute;
+                top: 7px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #333;
+                border-radius: 50%;
+                opacity: 1;
+                animation: wheel 1.3s infinite;
+                -webkit-animation: wheel 1.3s infinite;
+            }
+
+        }
+    }
+
+    .homeIconsContainer {
+        position: absolute;
+        top: 300px;
+        left: -10px;
+
+        .SocialIcons {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid;
+            background-color: var(--bg);
+            border-radius: 15px;
+            padding: 10px 15px;
+
+            a {
+                color: var(--black);
+            }
+
+            svg {
+                width: 48px;
+                height: 48px;
+                transition: transform 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
+
+    @keyframes wheel {
+        100% {
+            opacity: 0;
+            top: 27px;
+        }
+    }
 }

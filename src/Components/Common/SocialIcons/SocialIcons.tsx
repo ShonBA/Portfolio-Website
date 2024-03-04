@@ -2,11 +2,11 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoBookOutline } from "react-icons/io5";
 import { VscGithub } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
-import "./FooterIcons.scss";
+import "./SocialIcons.scss";
 
-function FooterIcons(): JSX.Element {
+function SocialIcons(): JSX.Element {
     return (
-        <div className="FooterIcons">
+        <div className="SocialIcons">
             <NavLink to={"https://www.linkedin.com/in/shonbenayoun/"}>
                 <CiLinkedin />
             </NavLink>
@@ -20,4 +20,4 @@ function FooterIcons(): JSX.Element {
     );
 }
 
-export default FooterIcons;
+export default SocialIcons;
