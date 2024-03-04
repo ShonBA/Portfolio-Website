@@ -13,13 +13,12 @@
         margin: 0 15px;
     }
 
-    .Menu {
-        a {
-            padding: 3rem 1.8rem;
-            color: var(--font);
-            &:hover{
-                color: var(--test-color1);
-            }
-        }
+    a {
+        margin: 0 1.8rem;
+        color: var(--font);
+    }
+
+    a:hover {
+        color: var(--test-color1);
     }
 }

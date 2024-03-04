@@ -10,13 +10,14 @@ function Footer(): JSX.Element {
     return (
         <div className="Footer">
             <div>
-                <span><FaRegCopyright className="copyright"/> 2024 Shon Benayoun</span>
+                <FaRegCopyright className="copyright" />
+                <span> 2024 Shon Benayoun</span>
             </div>
             <div>
+                <Menu />
                 <CiLinkedin />
                 <VscGithub />
                 <IoBookOutline />
-                <Menu/>
             </div>
         </div>
     );
