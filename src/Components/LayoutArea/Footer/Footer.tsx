@@ -1,9 +1,7 @@
-import { CiLinkedin } from "react-icons/ci";
 import { FaRegCopyright } from "react-icons/fa6";
-import { IoBookOutline } from "react-icons/io5";
-import { VscGithub } from "react-icons/vsc";
-import "./Footer.scss";
 import Menu from "../../NavArea/Menu/Menu";
+import "./Footer.scss";
+import FooterIcons from "./FooterIcons/FooterIcons";
 
 
 function Footer(): JSX.Element {
@@ -15,9 +13,7 @@ function Footer(): JSX.Element {
             </div>
             <div>
                 <Menu />
-                <CiLinkedin />
-                <VscGithub />
-                <IoBookOutline />
+                <FooterIcons />
             </div>
         </div>
     );

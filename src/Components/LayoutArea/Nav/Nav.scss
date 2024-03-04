@@ -8,6 +8,7 @@
     padding: 0 2rem;
     font-size: 1.3rem;
     font-weight: bold;
+    
 
     &>* {
         margin: 0 15px;
@@ -19,6 +20,6 @@
     }
 
     a:hover {
-        color: var(--test-color1);
+        color: var(--hover-purp);
     }
 }
