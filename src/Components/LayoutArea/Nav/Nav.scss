@@ -1,0 +1,25 @@
+.Nav {
+    height: 100%;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    &>* {
+        margin: 0 15px;
+    }
+
+    .Menu {
+        a {
+            padding: 3rem 1.8rem;
+            color: var(--font);
+            &:hover{
+                color: var(--test-color1);
+            }
+        }
+    }
+}

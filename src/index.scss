@@ -1,0 +1,20 @@
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+
+  --font: black;
+  --hover-font: #0F5F79;
+
+  --main-bg: #F6F5F5;
+  --light-bg: #D3E0EA;
+  --dark-bg: #1687A7;
+
+  --test-color: #276678;
+  --test-color1: #4EB1C5;
+
+}
