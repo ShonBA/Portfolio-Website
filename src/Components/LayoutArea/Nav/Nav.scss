@@ -1,6 +1,6 @@
 .Nav {
     height: 100%;
-    background-color: var(--light-bg);
+    background-color: var(--dark-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,7 +8,7 @@
     padding: 0 2rem;
     font-size: 1.3rem;
     font-weight: bold;
-    
+
 
     &>* {
         margin: 0 15px;
@@ -17,9 +17,10 @@
     a {
         margin: 0 1.8rem;
         color: var(--font);
+        transition: color 0.5s ease;
     }
 
     a:hover {
-        color: var(--hover-purp);
+        color: var(--white);
     }
 }
