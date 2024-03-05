@@ -14,6 +14,8 @@ html,
   --dark-bg: #929AAB;
   --btn: #393E46;
 
+  font-family: roberto;
+
   .btn-p {
     display: inline-block;
     border: 3px solid var(--black);
@@ -81,6 +83,11 @@ html,
     100% {
       top: 0em;
     }
+  }
+
+  @font-face{
+    font-family: roberto;
+    src: url("./Assets/Font/RobotoCondensed-Regular.ttf");
   }
 
 }
