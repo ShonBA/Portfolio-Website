@@ -1,0 +1,87 @@
+.Section {
+    .homeParaContainer {
+        height: 90vh;
+        background-image: url("../../../../Assets/Images/home-bg.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .paraContainer {
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin: 0 20vh;
+        }
+
+        h6 {
+            font-size: 32px;
+            padding: 0 20vh;
+        }
+
+        .btn-p {
+            padding: 0.6em 2em;
+        }
+
+        .mouseContainer {
+            display: flex;
+            justify-content: center;
+
+            .mouse {
+                width: 25px;
+                height: 40px;
+                border: 2px solid #333;
+                border-radius: 60px;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    position: absolute;
+                    top: 7px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #333;
+                    border-radius: 50%;
+                    opacity: 1;
+                    animation: wheel 1.3s infinite;
+                    -webkit-animation: wheel 1.3s infinite;
+                }
+            }
+        }
+    }
+
+    .homeIconsContainer {
+        position: absolute;
+        top: 300px;
+        left: -10px;
+
+        .SocialIcons {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid;
+            background-color: var(--bg);
+            border-radius: 15px;
+            padding: 10px 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+            a {
+                color: var(--black);
+            }
+
+            svg {
+                width: 48px;
+                height: 48px;
+                transition: transform 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
