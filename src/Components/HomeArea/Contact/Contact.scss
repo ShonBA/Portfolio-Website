@@ -1,3 +1,71 @@
 .Contact {
-	
+    height: 100%;
+    background-image: url("../../../Assets/Images/home-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    h1 {
+        font-size: 46px;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: x-large;
+        padding: 0 40vh 0 40vh;
+    }
+
+    form {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background: white;
+        padding: 3rem 4rem;
+        max-width: 80rem;
+        text-align: left;
+        width: 60%;
+        border-radius: 5px;
+        margin: 3rem auto 0 auto;
+        box-sizing: border-box;
+
+        .inputContainer {
+            margin: 15px auto;
+
+
+            &> :nth-child(2) {
+                background-color: var(--bg);
+                border: none;
+
+            }
+
+            label,
+            input,
+            textarea {
+                display: block;
+                width: 100%;
+                margin: 10px;
+                line-height: 3rem;
+                font-size: large;
+
+                &::placeholder {
+                    font-family: monospace;
+                }
+            }
+        }
+
+        .formBtn {
+            display: flex;
+            justify-content: right;
+            margin-top: 30px;
+
+            .btn-p {
+                padding: 0.6em 2em;
+            }
+        }
+
+
+    }
 }

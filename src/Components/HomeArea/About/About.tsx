@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import appConfig from "../../Utils/AppConfig";
+import appConfig from "../../../Utils/AppConfig";
 import "./About.scss";
 
 function About(): JSX.Element {
