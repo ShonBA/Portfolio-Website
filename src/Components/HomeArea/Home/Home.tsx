@@ -1,3 +1,4 @@
+import useTitle from "../../../Utils/UseTitle";
 import ProjectsCard from "../../ProjectsArea/ProjectsCard/ProjectsCard";
 import ProjectsList from "../../ProjectsArea/ProjectsList/ProjectsList";
 import About from "../About/About";
@@ -6,6 +7,7 @@ import "./Home.scss";
 import Section from "./Section/Section";
 
 function Home(): JSX.Element {
+    useTitle("Shon Benayoun | Portfolio");
     return (
         <div className="Home">
             <div id="homeMainSection">
