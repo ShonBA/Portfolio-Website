@@ -13,7 +13,7 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
                 <img src={require("../../../Assets/Images/" + props.project.imageName)} />
             </div>
             <div className="projectCardData">
-                <h2>{props.project.name}</h2>
+                <h2 >{props.project.name}</h2>
                 <p>{props.project.description} </p>
                 <hr />
                 <TechStack stack={props.project.skills} />

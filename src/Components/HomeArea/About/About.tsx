@@ -19,12 +19,12 @@ function About(): JSX.Element {
     return (
         <div className="About">
             <div className="aboutPara">
-                <h1>About Me</h1>
+                <h1 className="headerLine">About Me</h1>
                 <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
             </div>
             <div className="aboutData">
                 <div className="aboutSection">
-                    <h4>Get To Know Me!</h4>
+                    <h4 className="headerLine">Get To Know Me!</h4>
                     <p className="aboutContentDetails">
                         I'm a <strong>Frontend Focused Web Developer</strong> building
                         and managing the Front-end of Websites and Web Applications that
@@ -51,7 +51,7 @@ function About(): JSX.Element {
                     <HashLink className={"btn-p"} smooth to={"#contactMainSection"}>Contact</HashLink>
                 </div>
                 <div className="aboutSection">
-                    <h4>My Skills</h4>
+                    <h4 className="headerLine">My Skills</h4>
                     <div className="techStack">
                         <TechStack stack={feStack} />
                     </div>

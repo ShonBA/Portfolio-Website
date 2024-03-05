@@ -36,6 +36,23 @@ html,
     }
   }
 
+  .headerLine {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: var(--dark-bg);
+    }
+
+    padding-bottom: 10px; // Adjust as needed for spacing between text and line
+  }
+
   @keyframes bouncy {
     0% {
       top: 0em;
