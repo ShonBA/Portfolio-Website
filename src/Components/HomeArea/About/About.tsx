@@ -1,8 +1,39 @@
 import { NavLink } from "react-router-dom";
 import appConfig from "../../../Utils/AppConfig";
 import "./About.scss";
+import TechStack from "../../Common/TechStack/TechStack";
 
 function About(): JSX.Element {
+    const techStack = [
+        'HTML',
+        'CSS',
+        'SCSS',
+        'Bootstrap',
+        'JavaScript',
+        'jQuery',
+        'AJAX',
+        'TypeScript',
+        'OOP',
+        'React',
+        'Redux',
+        'Angular',
+        'Node.js',
+        'Express',
+        'SQL',
+        'MySQL',
+        'MongoDB',
+        'Mongoose',
+        'RegEx',
+        'REST API',
+        'PHP',
+        'Microservices',
+        'Socket.io',
+        'Git / GitHub',
+        'Docker',
+        'Cloud',
+        'Chrome Extension'
+    ];
+
     return (
         <div className="About">
             <div className="aboutPara">
@@ -40,33 +71,7 @@ function About(): JSX.Element {
                 <div className="aboutSection">
                     <h4>My Skills</h4>
                     <div className="techStack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>SCSS</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>jQuery</span>
-                        <span>AJAX</span>
-                        <span>TypeScript</span>
-                        <span>OOP</span>
-                        <span>React</span>
-                        <span>Redux</span>
-                        <span>Angular</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>SQL</span>
-                        <span>MySQL</span>
-                        <span>MongoDB</span>
-                        <span>Mongoose</span>
-                        <span>RegEx</span>
-                        <span>REST API</span>
-                        <span>PHP</span>
-                        <span>Microservices</span>
-                        <span>Socket.io</span>
-                        <span>Git / GitHub</span>
-                        <span>Docker</span>
-                        <span>Cloud</span>
-                        <span>Chrome Extension</span>
+                        <TechStack items={techStack} />
                     </div>
                 </div>
             </div>

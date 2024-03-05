@@ -27,11 +27,14 @@ html,
     background-color: var(--btn);
     font-size: x-large;
     border-radius: 15px;
+    cursor: pointer;
 
     &:hover {
       background-color: var(--dark-bg);
       color: var(--black);
     }
+
+    
   }
 
   @keyframes bouncy {
