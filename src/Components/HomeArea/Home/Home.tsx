@@ -1,3 +1,5 @@
+import ProjectsCard from "../../ProjectsArea/ProjectsCard/ProjectsCard";
+import ProjectsList from "../../ProjectsArea/ProjectsList/ProjectsList";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import "./Home.scss";
@@ -13,19 +15,7 @@ function Home(): JSX.Element {
                 <About />
             </div>
             <div id="projectsMainSection">
-                <div>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                    <p>Place Holder ...</p>
-                </div>
+                <ProjectsList/>
             </div>
             <div id="contactMainSection">
                 <Contact />

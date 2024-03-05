@@ -1,3 +1,19 @@
 .ProjectsList {
-	
+    margin: 8vh 0;
+
+    .projectsContainer {
+        padding: 5vh 20vh 0 20vh;
+
+        .projectCaption {
+            margin-bottom: 6rem;
+
+            h1 {
+                font-size: xx-large;
+            }
+
+            p {
+                font-size: x-large;
+            }
+        }
+    }
 }
