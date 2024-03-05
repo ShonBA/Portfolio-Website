@@ -9,6 +9,9 @@
         flex-direction: column;
         justify-content: center;
 
+        .paraContainer {
+            padding: 100px 0;
+        }
 
         h1 {
             font-size: 64px;
@@ -21,39 +24,54 @@
         }
 
         a {
-            border: 1px solid;
-            margin: 0 auto;
-            padding: 10px 30px;
+            display: inline-block;
+            padding: 0.6em 2em;
+            border: 3px solid var(--black);
+            margin: 0 0.3em 0.3em 0;
+            box-sizing: border-box;
             text-decoration: none;
+            text-align: center;
+            transition: all 0.2s;
+            animation: bouncy 5s infinite linear;
+            position: relative;
             color: var(--white);
-            font-size: x-large;
             background-color: var(--btn);
+            font-size: x-large;
             border-radius: 15px;
+            
+            &:hover {
+                background-color: var(--dark-bg);
+                color: var(--black);
+            }
         }
 
-        .mouse {
-            width: 25px;
-            height: 40px;
-            border: 2px solid #333;
-            border-radius: 60px;
-            position: relative;
-            overflow: hidden;
+        .mouseContainer {
+            display: flex;
+            justify-content: center;
 
-            &::before {
-                content: '';
-                width: 5px;
-                height: 5px;
-                position: absolute;
-                top: 7px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: #333;
-                border-radius: 50%;
-                opacity: 1;
-                animation: wheel 1.3s infinite;
-                -webkit-animation: wheel 1.3s infinite;
+            .mouse {
+                width: 25px;
+                height: 40px;
+                border: 2px solid #333;
+                border-radius: 60px;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    position: absolute;
+                    top: 7px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #333;
+                    border-radius: 50%;
+                    opacity: 1;
+                    animation: wheel 1.3s infinite;
+                    -webkit-animation: wheel 1.3s infinite;
+                }
             }
-
         }
     }
 
@@ -69,6 +87,7 @@
             background-color: var(--bg);
             border-radius: 15px;
             padding: 10px 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
             a {
                 color: var(--black);
@@ -91,6 +110,36 @@
         100% {
             opacity: 0;
             top: 27px;
+        }
+    }
+
+    @keyframes bouncy {
+        0% {
+            top: 0em;
+        }
+
+        40% {
+            top: 0em;
+        }
+
+        43% {
+            top: -0.9em;
+        }
+
+        46% {
+            top: 0em;
+        }
+
+        48% {
+            top: -0.4em;
+        }
+
+        50% {
+            top: 0em;
+        }
+
+        100% {
+            top: 0em;
         }
     }
 }
