@@ -1,5 +1,4 @@
 import useTitle from "../../../Utils/UseTitle";
-import ProjectsCard from "../../ProjectsArea/ProjectsCard/ProjectsCard";
 import ProjectsList from "../../ProjectsArea/ProjectsList/ProjectsList";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
