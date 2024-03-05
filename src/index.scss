@@ -14,4 +14,24 @@ html,
   --dark-bg: #929AAB;
   --btn: #393E46;
 
+  .btn-p {
+    display: inline-block;
+    border: 3px solid var(--black);
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bouncy 5s infinite linear;
+    position: relative;
+    color: var(--white);
+    background-color: var(--btn);
+    font-size: x-large;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: var(--dark-bg);
+        color: var(--black);
+    }
+}
+
 }
