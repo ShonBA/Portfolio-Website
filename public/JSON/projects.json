@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Explore Ease",
+        "description": "My vacation project is more than just a search engine, it's a comprehensive platform designed to redefine the way users plan their vacations. With features like the ability to like and unlike vacations, real-time status tracking, and an intelligent auto-complete system during vacation creation and editing, the project aims to deliver a seamless user experience.",
+        "skills": [
+            "React",
+            "Axios",
+            "Redux",
+            "Leaflet",
+            "Notyf",
+            "Node.js",
+            "Express",
+            "JOI",
+            "Chai",
+            "Mocha",
+            "Supertest",
+            "JWT Token"
+        ],
+        "imageName": "ExploreEase.png"
+    },
+    {
+        "id": 1,
+        "name": "Shon Benayoun Portfolio",
+        "description": "My Personal Portfolio Website",
+        "skills": [
+            "React",
+            "Axios"
+        ],
+        "imageName": "Portfolio.png"
+    }
+]
