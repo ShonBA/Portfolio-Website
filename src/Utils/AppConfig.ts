@@ -1,7 +1,8 @@
 class AppConfig {
     // URL'S
     public readonly techStackUrl = "https://raw.githubusercontent.com/ShonBA/Portfolio-Website/master/public/JSON/techStack.json";
-        
+    public readonly projectsUrl = "https://raw.githubusercontent.com/ShonBA/Portfolio-Website/master/public/JSON/projects.json";
+
     // Social URL'S
     public readonly linkDinUrl = "https://www.linkedin.com/in/shonbenayoun/";
     public readonly gitHubUrl = "https://github.com/ShonBA";

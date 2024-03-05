@@ -14,7 +14,7 @@ function TechStack(): JSX.Element {
 
     return (
         <div className="TechStack">
-            {feStack.map(i => <span className="stackItem">{i}</span>)}
+            {feStack.map(i => <span key={i} className="stackItem">{i}</span>)}
         </div>
     );
 }
