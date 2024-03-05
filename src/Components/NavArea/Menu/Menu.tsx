@@ -1,7 +1,5 @@
-import { NavLink } from "react-router-dom";
-import appConfig from "../../../Utils/AppConfig";
-import "./Menu.scss";
 import { HashLink } from "react-router-hash-link";
+import "./Menu.scss";
 
 function Menu(): JSX.Element {
     return (

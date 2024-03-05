@@ -1,4 +1,5 @@
 import ProjectModel from "../../../Models/ProjectModel";
+import TechStack from "../../Common/TechStack/TechStack";
 import "./ProjectsCard.scss";
 
 interface ProjectCardProps {
@@ -14,6 +15,8 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
             <div className="projectCardData">
                 <h2>{props.project.name}</h2>
                 <p>{props.project.description} </p>
+                <hr />
+                <TechStack stack={props.project.skills} />
                 <button className="btn-p">Explore</button>
             </div>
         </div>

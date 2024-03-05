@@ -1,11 +1,20 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import dataService from "../../../Service/DataService";
 import appConfig from "../../../Utils/AppConfig";
 import TechStack from "../../Common/TechStack/TechStack";
 import "./About.scss";
+import { HashLink } from "react-router-hash-link";
 
 function About(): JSX.Element {
 
+    const [feStack, setFeStack] = useState<string[]>([]);
 
+    useEffect(() => {
+        dataService.getAllTechStack()
+            .then(beStack => setFeStack(beStack))
+            .catch(err => console.log(err))
+    }, []);
 
     return (
         <div className="About">
@@ -39,12 +48,12 @@ function About(): JSX.Element {
                         matches my skills and experience then don't hesitate to
                         <strong>contact</strong> me.
                     </p>
-                    <NavLink className={"btn-p"} to={"#"}>Contact</NavLink>
+                    <HashLink className={"btn-p"} smooth to={"#contactMainSection"}>Contact</HashLink>
                 </div>
                 <div className="aboutSection">
                     <h4>My Skills</h4>
                     <div className="techStack">
-                        <TechStack />
+                        <TechStack stack={feStack} />
                     </div>
                 </div>
             </div>
