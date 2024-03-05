@@ -20,7 +20,7 @@
         "imageName": "ExploreEase.png"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Shon Benayoun Portfolio",
         "description": "My Personal Portfolio Website",
         "skills": [
@@ -28,5 +28,29 @@
             "Axios"
         ],
         "imageName": "Portfolio.png"
+    },
+    {
+        "id": 3,
+        "name": "Crypto World",
+        "description": "Must Common Crypto Currencies, live value in USD EUR INS, Live Chart !",
+        "skills": [
+            "JS",
+            "AJAX",
+            "Jquery",
+            "REST-API"
+        ],
+        "imageName": "Crypto.png"
+    },
+    {
+        "id": 4,
+        "name": "Globes",
+        "description": "Show Countries population and also nationality's, search by country",
+        "skills": [
+            "JS",
+            "AJAX",
+            "Jquery",
+            "REST-API"
+        ],
+        "imageName": "Globes.png"
     }
 ]

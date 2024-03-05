@@ -16,16 +16,13 @@ function ProjectsList(): JSX.Element {
 
     return (
         <div className="ProjectsList">
+
+            <div className="projectCaption">
+                <h1>Projects</h1>
+                <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+            </div>
             <div className="projectsContainer">
-
-                <div className="projectCaption">
-
-                    <h1>Projects</h1>
-                    <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
-                </div>
-                <div>
-                    {feProjects.map(p => <ProjectsCard key={p.id} project={p} />)}
-                </div>
+                {feProjects.map(p => <ProjectsCard key={p.id} project={p} />)}
             </div>
         </div>
     );
