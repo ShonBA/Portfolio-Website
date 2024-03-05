@@ -1,38 +1,11 @@
 import { NavLink } from "react-router-dom";
 import appConfig from "../../../Utils/AppConfig";
-import "./About.scss";
 import TechStack from "../../Common/TechStack/TechStack";
+import "./About.scss";
 
 function About(): JSX.Element {
-    const techStack = [
-        'HTML',
-        'CSS',
-        'SCSS',
-        'Bootstrap',
-        'JavaScript',
-        'jQuery',
-        'AJAX',
-        'TypeScript',
-        'OOP',
-        'React',
-        'Redux',
-        'Angular',
-        'Node.js',
-        'Express',
-        'SQL',
-        'MySQL',
-        'MongoDB',
-        'Mongoose',
-        'RegEx',
-        'REST API',
-        'PHP',
-        'Microservices',
-        'Socket.io',
-        'Git / GitHub',
-        'Docker',
-        'Cloud',
-        'Chrome Extension'
-    ];
+
+
 
     return (
         <div className="About">
@@ -71,7 +44,7 @@ function About(): JSX.Element {
                 <div className="aboutSection">
                     <h4>My Skills</h4>
                     <div className="techStack">
-                        <TechStack items={techStack} />
+                        <TechStack />
                     </div>
                 </div>
             </div>

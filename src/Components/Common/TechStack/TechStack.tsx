@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import dataService from "../../../Service/DataService";
 import "./TechStack.scss";
-interface StackProps {
-    items: string[];
-}
-function TechStack(props: StackProps): JSX.Element {
 
-    const [stack, setStack] = useState<string[]>(props.items);
+
+function TechStack(): JSX.Element {
+    const [feStack, setFeStack] = useState<string[]>([]);
+
+    useEffect(() => {
+        dataService.getAllTechStack()
+            .then(beStack => setFeStack(beStack))
+            .catch(err => console.log(err))
+    }, []);
 
     return (
         <div className="TechStack">
-            {stack.map(i => <span className="stackItem">{i}</span>)}
+            {feStack.map(i => <span className="stackItem">{i}</span>)}
         </div>
     );
 }
