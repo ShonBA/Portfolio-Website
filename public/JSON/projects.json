@@ -21,16 +21,6 @@
     },
     {
         "id": 2,
-        "name": "Shon Benayoun Portfolio",
-        "description": "Welcome to the digital showcase of Shon Benayoun's Personal Portfolio – a unique and dynamic website designed to reflect the essence of who I am and what I bring to the digital landscape. Crafted with pure vanilla JavaScript, this portfolio site is more than just a collection of projects; it's a journey through my skills, experiences, and passion for creating meaningful web solutions.",
-        "skills": [
-            "React",
-            "Axios"
-        ],
-        "imageName": "Portfolio.png"
-    },
-    {
-        "id": 3,
         "name": "Crypto World",
         "description": "Introducing Crypto World, your go-to platform for staying ahead in the dynamic world of cryptocurrencies! Our website, built with pure vanilla JavaScript, offers a seamless and user-friendly experience for tracking the live values of various cryptocurrencies in USD, EUR, and Israeli Shekel.",
         "skills": [
@@ -42,7 +32,7 @@
         "imageName": "Crypto.png"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Globes",
         "description": "Introducing Globes Site, your comprehensive gateway to a world of geographical insights and global statistics. This user-friendly platform provides a panoramic view of the globe, allowing you to explore and analyze data on various regions, countries, populations, and currencies.",
         "skills": [
@@ -52,5 +42,15 @@
             "REST-API"
         ],
         "imageName": "Globes.png"
+    },
+    {
+        "id": 4,
+        "name": "Shon Benayoun Portfolio",
+        "description": "Welcome to the digital showcase of Shon Benayoun's Personal Portfolio – a unique and dynamic website designed to reflect the essence of who I am and what I bring to the digital landscape. Crafted with pure vanilla JavaScript, this portfolio site is more than just a collection of projects; it's a journey through my skills, experiences, and passion for creating meaningful web solutions.",
+        "skills": [
+            "React",
+            "Axios"
+        ],
+        "imageName": "Portfolio.png"
     }
 ]
