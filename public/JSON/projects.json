@@ -17,7 +17,8 @@
             "Supertest",
             "JWT Token"
         ],
-        "imageName": "ExploreEase.png"
+        "imageName": "ExploreEase.png",
+        "siteUrl": "http://159.89.177.214/home"
     },
     {
         "id": 2,
@@ -29,7 +30,8 @@
             "Jquery",
             "REST-API"
         ],
-        "imageName": "Crypto.png"
+        "imageName": "Crypto.png",
+        "siteUrl": "https://shonba.github.io/Project-2---Crypto-Currencies/"
     },
     {
         "id": 3,
@@ -41,7 +43,8 @@
             "Jquery",
             "REST-API"
         ],
-        "imageName": "Globes.png"
+        "imageName": "Globes.png",
+        "siteUrl": "https://shonba.github.io/Mission-2---Globes/"
     },
     {
         "id": 4,
@@ -51,6 +54,7 @@
             "React",
             "Axios"
         ],
-        "imageName": "Portfolio.png"
+        "imageName": "Portfolio.png",
+        "siteUrl": "#"
     }
 ]

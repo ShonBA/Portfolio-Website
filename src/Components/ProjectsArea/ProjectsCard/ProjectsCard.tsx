@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ProjectModel from "../../../Models/ProjectModel";
 import TechStack from "../../Common/TechStack/TechStack";
 import "./ProjectsCard.scss";
@@ -16,7 +17,7 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
                 <h2 >{props.project.name}</h2>
                 <p className="headerLine">{props.project.description} </p>
                 <TechStack stack={props.project.skills} />
-                <button className="btn-p">Explore</button>
+                <NavLink className="btn-p" to={props.project.siteUrl}>{props.project.name}</NavLink>
             </div>
         </div>
     );
