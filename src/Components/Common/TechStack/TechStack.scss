@@ -1,14 +1,15 @@
 .TechStack {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 
     .stackItem {
-        padding: 10px;
+        padding: 10px 20px;
         border: 1px solid;
         border-radius: 15px;
         background-color: var(--lighter);
         color: var(--black);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        font-size: large;
     }
 }

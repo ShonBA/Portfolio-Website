@@ -6,12 +6,12 @@ import "./ProjectsList.scss";
 
 function ProjectsList(): JSX.Element {
 
-    const [feProjects, setFeProject] = useState<ProjectModel[]>([]);
+    const [frontendProjects, setFrontendProjects] = useState<ProjectModel[]>([]);
 
     useEffect(() => {
         dataService.getAllProjects()
-            .then(beProjects => setFeProject(beProjects))
-            .catch(err => console.log(err))
+            .then(backendProjects => setFrontendProjects(backendProjects))
+            .catch(error => console.error(error))
     }, []);
 
     return (
@@ -19,10 +19,10 @@ function ProjectsList(): JSX.Element {
 
             <div className="projectCaption">
                 <h1 className="headerLine">Projects</h1>
-                <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+                <p>Embark on a journey through the Code Canvas: Showcasing my digital odyssey.</p>
             </div>
             <div className="projectsContainer">
-                {feProjects.map(p => <ProjectsCard key={p.id} project={p} />)}
+                {frontendProjects.map(project => <ProjectsCard key={project.id} project={project} />)}
             </div>
         </div>
     );

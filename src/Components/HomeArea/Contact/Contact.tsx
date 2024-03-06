@@ -8,7 +8,7 @@ function Contact(): JSX.Element {
     return (
         <div className="Contact">
             <h1 className="headerLine">Contact</h1>
-            <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
+            <p>Let's Connect: Drop me a Line!</p>
             {!state.succeeded ?
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="inputContainer">
