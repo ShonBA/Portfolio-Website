@@ -14,8 +14,7 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
             </div>
             <div className="projectCardData">
                 <h2 >{props.project.name}</h2>
-                <p>{props.project.description} </p>
-                <hr />
+                <p className="headerLine">{props.project.description} </p>
                 <TechStack stack={props.project.skills} />
                 <button className="btn-p">Explore</button>
             </div>
