@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "Explore Ease",
+        "description": "My vacation project is more than just a search engine, it's a comprehensive platform designed to redefine the way users plan their vacations. With features like the ability to like and unlike vacations, real-time status tracking, and an intelligent auto-complete system during vacation creation and editing, the project aims to deliver a seamless user experience.",
+        "skills": [
+            "React",
+            "Axios",
+            "Redux",
+            "Leaflet",
+            "Notyf",
+            "Node.js",
+            "Express",
+            "JOI",
+            "Chai",
+            "Mocha",
+            "Supertest",
+            "JWT Token"
+        ],
+        "imageName": "ExploreEase.png",
+        "siteUrl": "http://159.89.177.214/home"
+    },
+    {
+        "id": 2,
+        "name": "Crypto World",
+        "description": "Introducing Crypto World, your go-to platform for staying ahead in the dynamic world of cryptocurrencies! Our website, built with pure vanilla JavaScript, offers a seamless and user-friendly experience for tracking the live values of various cryptocurrencies in USD, EUR, and Israeli Shekel.",
+        "skills": [
+            "JS",
+            "AJAX",
+            "Jquery",
+            "REST-API"
+        ],
+        "imageName": "Crypto.png",
+        "siteUrl": "https://shonba.github.io/Project-2---Crypto-Currencies/"
+    },
+    {
+        "id": 3,
+        "name": "Globes",
+        "description": "Introducing Globes Site, your comprehensive gateway to a world of geographical insights and global statistics. This user-friendly platform provides a panoramic view of the globe, allowing you to explore and analyze data on various regions, countries, populations, and currencies.",
+        "skills": [
+            "JS",
+            "AJAX",
+            "Jquery",
+            "REST-API"
+        ],
+        "imageName": "Globes.png",
+        "siteUrl": "https://shonba.github.io/Mission-2---Globes/"
+    },
+    {
+        "id": 4,
+        "name": "Shon Benayoun Portfolio",
+        "description": "Welcome to the digital showcase of Shon Benayoun's Personal Portfolio – a unique and dynamic website designed to reflect the essence of who I am and what I bring to the digital landscape. Crafted with pure vanilla JavaScript, this portfolio site is more than just a collection of projects; it's a journey through my skills, experiences, and passion for creating meaningful web solutions.",
+        "skills": [
+            "React",
+            "Axios"
+        ],
+        "imageName": "Portfolio.png",
+        "siteUrl": "#"
+    }
+]
