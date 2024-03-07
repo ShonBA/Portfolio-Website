@@ -1,5 +1,9 @@
 .Home {
+    margin-top: 10vh;
     background-color: var(--bg);
+    height: 100%;
 
-
+    .homeSection {
+        height: fit-content;
+    }
 }

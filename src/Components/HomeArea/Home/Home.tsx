@@ -9,16 +9,16 @@ function Home(): JSX.Element {
     useTitle("Shon Benayoun | Portfolio");
     return (
         <div className="Home">
-            <div id="homeMainSection">
+            <div id="homeMainSection" className="homeSection">
                 <Section />
             </div>
-            <div id="aboutMainSection">
+            <div id="aboutMainSection" className="homeSection">
                 <About />
             </div>
-            <div id="projectsMainSection">
-                <ProjectsList/>
+            <div id="projectsMainSection" className="homeSection">
+                <ProjectsList />
             </div>
-            <div id="contactMainSection">
+            <div id="contactMainSection" className="homeSection">
                 <Contact />
             </div>
         </div>
