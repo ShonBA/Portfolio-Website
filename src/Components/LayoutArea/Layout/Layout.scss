@@ -7,6 +7,8 @@
     footer {
         grid-row: span 6;
         height: 100%;
+        overflow: hidden;
+
     }
 
     nav {
@@ -21,8 +23,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        overflow: hidden; 
-        min-height: 100vh; 
+        min-height: 100vh;
     }
 
     footer {

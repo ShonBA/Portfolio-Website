@@ -62,16 +62,16 @@
 
     .homeIconsContainer {
         position: absolute;
-        top: 300px;
-        left: -10px;
+        top: 45%;
+        left: -3px;
 
         .SocialIcons {
             display: flex;
             flex-direction: column;
             border: 3px solid;
             background-color: var(--bg);
-            border-radius: 15px;
-            padding: 10px 15px;
+            border-radius: 0px 15px 15px 0;
+            padding: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
             a {
@@ -79,12 +79,12 @@
             }
 
             svg {
-                width: 48px;
-                height: 48px;
+                width: 36px;
+                height: 36px;
                 transition: transform 0.5s ease;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
             }
         }
@@ -94,6 +94,42 @@
         100% {
             opacity: 0;
             top: 27px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .homeParaContainer {
+            .paraContainer {
+
+                h1 {
+                    font-size: 46px;
+
+                }
+
+                h4 {
+                    font-size: 26px;
+                    padding: 0 45vh;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    padding: 0 45vh;
+                }
+            }
+        }
+
+        .homeIconsContainer {
+            position: absolute;
+            rotate: 90deg;
+            top: 56px;
+            left: 47%;
+
+            .SocialIcons {
+                &>* {
+                    rotate: 270deg;
+
+                }
+            }
         }
     }
 }

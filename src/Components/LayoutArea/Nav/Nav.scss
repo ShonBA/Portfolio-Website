@@ -23,4 +23,25 @@
     a:hover {
         color: var(--white);
     }
+
+    @media (max-width: 768px) {
+        font-size: medium;
+        justify-content: center;
+
+
+        a {
+            margin: 0 1.5rem;
+
+        }
+
+        img {
+            width: auto;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        span {
+            display: none;
+        }
+    }
 }
