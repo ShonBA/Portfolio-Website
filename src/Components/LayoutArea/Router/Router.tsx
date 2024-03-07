@@ -8,7 +8,7 @@ function Router(): JSX.Element {
         <div className="Router">
             <Routes>
                 {/* Default Routes */}
-                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Home />} />
                 {/* <Route path="*" element={<PageNotFound />} /> */}
             </Routes>
         </div>
