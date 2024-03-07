@@ -2,13 +2,13 @@
     height: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 8%;
-    grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: 1fr 8%;
+    // grid-template-columns: repeat(6, 1fr);
 
     nav,
     main,
     footer {
-        grid-column: span 6;
+        // grid-column: span 6;
     }
 
     nav {
