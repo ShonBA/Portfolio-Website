@@ -1,5 +1,4 @@
 .ProjectsCard {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +35,40 @@
         }
     }
 
+
     .btn-p {
         padding: 0.4em 2em;
         margin: 2em 0;
     }
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        text-align: center;
+        margin: 5em 10em;
+
+        .projectCardImage {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 400px;
+            }
+
+        }
+
+        .projectCardData {
+            width: 60%;
+
+            overflow: hidden;
+            .TechStack{
+                .stackItem{
+                    padding: 10px 15px;
+                }
+            }
+        }
+
+
+
+    }
+
 }

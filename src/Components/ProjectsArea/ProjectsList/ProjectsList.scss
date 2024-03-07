@@ -16,4 +16,10 @@
             font-size: x-large;
         }
     }
+    @media (max-width: 768px) {
+        .projectCaption{
+            padding: 0vh 50vh;
+
+        }
+    }
 }
