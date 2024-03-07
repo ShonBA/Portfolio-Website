@@ -46,6 +46,19 @@
                 padding: 0.4em 2em;
                 margin: 1em;
             }
-         }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .aboutPara {
+            margin: 0 auto;
+            padding: 10vh 50vh 0 50vh;
+        }
+
+        .aboutData {
+            margin: 0 25vh;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
