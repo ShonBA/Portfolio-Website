@@ -1,6 +1,6 @@
+import Home from "../../HomeArea/Home/Home";
 import Footer from "../Footer/Footer";
 import Nav from "../Nav/Nav";
-import Router from "../Router/Router";
 import "./Layout.scss";
 
 function Layout(): JSX.Element {
@@ -10,7 +10,8 @@ function Layout(): JSX.Element {
                 <Nav />
             </nav>
             <main>
-                <Router />
+                <Home />
+                {/* <Router /> */}
             </main>
             <footer>
                 <Footer />
