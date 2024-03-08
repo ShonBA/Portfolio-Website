@@ -1,13 +1,10 @@
-import React, { useRef } from "react";
-import { HashLink } from "react-router-hash-link";
 import { useInView } from "react-intersection-observer";
+import { HashLink } from "react-router-hash-link";
 import SocialIcons from "../../../Common/SocialIcons/SocialIcons";
 import "./Section.scss";
 
 function Section(): JSX.Element {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-    });
+    const [ref, inView] = useInView({ triggerOnce: true, });
 
     return (
         <div className="Section">

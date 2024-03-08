@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { useInView } from 'react-intersection-observer';  // Import the useInView hook
 import dataService from "../../../Service/DataService";
 import appConfig from "../../../Utils/AppConfig";
 import TechStack from "../../Common/TechStack/TechStack";
@@ -9,7 +9,8 @@ import "./About.scss";
 
 function About(): JSX.Element {
     const [frontendStack, setFrontendStack] = useState<string[]>([]);
-    const [ref, inView] = useInView();  // Initialize the useInView hook
+    const [headerRef, headerInView] = useInView({ triggerOnce: true });
+    const [aboutDataRef, aboutDataInView] = useInView({ triggerOnce: true });
 
     useEffect(() => {
         dataService.getAllTechStack()
@@ -18,13 +19,13 @@ function About(): JSX.Element {
     }, []);
 
     return (
-        <div className={`About ${inView ? 'visible' : ''}`} ref={ref}> {/* Add the 'visible' class when in view */}
-            <div className="aboutPara">
+        <div className={`About`} >
+            <div className={`aboutPara  ${headerInView ? 'visible' : ''}`} ref={headerRef}>
                 <h1 className="headerLine">About Me</h1>
                 <p>Welcome! I'm excited to share more about myself, my work, and my current skills, primarily focused on programming and technology.</p>
             </div>
-            <div className="aboutData">
-                <div className="aboutSection">
+            <div className="aboutData" ref={aboutDataRef}>
+                <div className={`aboutSection ${aboutDataInView ? 'visible_left' : ''}`} >
                     <h4 className="headerLine">Get To Know Me!</h4>
                     <p className="aboutContentDetails">
                         I'm a <strong>Frontend Web Developer</strong> dedicated to crafting and managing the frontend of websites and web applications, contributing to the overall success of the products. Explore some of my projects in the <strong>Projects</strong> section.
@@ -37,7 +38,7 @@ function About(): JSX.Element {
                     </p>
                     <HashLink className={"btn-p"} smooth to={"#contactMainSection"}>Contact</HashLink>
                 </div>
-                <div className="aboutSection">
+                <div className={`aboutSection ${aboutDataInView ? 'visible_right' : ''}`}>
                     <h4 className="headerLine">My Skills</h4>
                     <div className="techStack">
                         <TechStack stack={frontendStack} />

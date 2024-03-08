@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import ProjectModel from "../../../Models/ProjectModel";
@@ -11,34 +10,11 @@ interface ProjectCardProps {
 
 function ProjectsCard(props: ProjectCardProps): JSX.Element {
 
-    const [screenSize, setScreenSize] = useState<number>(null);
+    const [ref, inView] = useInView({ triggerOnce: true });
 
-    useEffect(() => {
-        setScreenSize(window.innerWidth)
-    }, [useInView]);
-
-    const [ref, inView] = useInView({
-        triggerOnce: screenSize <= 768 ? true : false
-    });
-    const animationRef = useRef<HTMLDivElement>(null);
-
-    function handleIntersection(entries: IntersectionObserverEntry[]) {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-            animationRef.current?.classList.add("animate");
-        } else {
-            animationRef.current?.classList.remove("animate");
-        }
-    }
-
-    const options = {
-        threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, options);
     return (
-        <div className={`ProjectsCard ${inView ? "visible" : ""}`} ref={ref} onClick={() => observer.observe(animationRef.current)}>
-            <div className="projectCardImage" ref={animationRef}>
+        <div className={`ProjectsCard ${inView ? "visible" : ""}`} ref={ref}>
+            <div className="projectCardImage" >
                 <img src={require("../../../Assets/Images/" + props.project.imageName)} />
             </div>
             <div className="projectCardData">

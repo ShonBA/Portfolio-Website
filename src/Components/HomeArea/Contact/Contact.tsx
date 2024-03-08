@@ -1,16 +1,21 @@
 import { useForm } from "@formspree/react";
 import "./Contact.scss";
+import { useInView } from "react-intersection-observer";
 
 function Contact(): JSX.Element {
 
     const [state, handleSubmit] = useForm("mleqlear");
+    const [headerRef, headerInView] = useInView({ triggerOnce: true });
+    const [formRef, formInView] = useInView({ triggerOnce: true });
 
     return (
         <div className="Contact">
-            <h1 className="headerLine">Contact</h1>
-            <p>Let's Connect: Drop me a Line!</p>
+            <div className={`contactHeaderContainer ${headerInView ? "visible_header" : ""}`} ref={headerRef}>
+                <h1 className="headerLine">Contact</h1>
+                <p>Let's Connect: Drop me a Line!</p>
+            </div>
             {!state.succeeded ?
-                <form className="form" onSubmit={handleSubmit}>
+                <form className={`form ${formInView ? "visible_form" : ""}`} onSubmit={handleSubmit} ref={formRef}>
                     <div className="inputContainer">
                         <label>Full Name</label>
                         <input
@@ -40,7 +45,7 @@ function Contact(): JSX.Element {
                 </form> :
                 <div className="form">
                     <span>Thanks for reaching out!</span>
-                    </div>
+                </div>
             }
         </div>
     );

@@ -12,13 +12,16 @@
             margin: 0;
         }
 
+        &.visible {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
     }
 
     .aboutData {
         display: flex;
         justify-content: space-between;
         margin: 0 10vh;
-
 
         .aboutSection {
             width: 45%;
@@ -46,11 +49,37 @@
                 padding: 0.4em 2em;
                 margin: 1em;
             }
+
+            &.visible_left {
+                animation: slideInFromLeft 1s ease-in-out;
+            }
+
+            &.visible_right {
+                animation: slideInFromRight 1s ease-in-out;
+            }
         }
     }
 
-    &.visible {
-        animation: fadeInUp 1s ease-in-out;
+
+
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(120%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromLeft {
+        from {
+            transform: translateX(-120%);
+        }
+        
+        to {
+            transform: translateX(0);
+        }
     }
 
     @keyframes fadeInUp {
