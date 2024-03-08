@@ -12,8 +12,8 @@ function Footer(): JSX.Element {
                 <span> 2024 Shon Benayoun</span>
             </div>
             <div>
-                <Menu />
                 <SocialIcons />
+                <Menu />
             </div>
         </div>
     );

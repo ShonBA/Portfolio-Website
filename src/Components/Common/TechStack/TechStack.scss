@@ -11,12 +11,37 @@
         color: var(--black);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         font-size: large;
+        animation: shake 2s ease 0s infinite normal forwards;
         &:hover{
             background-image: url("../../../Assets/Images/home-bg.jpg");
             background-size: cover;
         }
     }
-
+    @keyframes shake {
+        0% {
+            transform: translate(0);
+        }
+    
+        20% {
+            transform: translate(-2px, 2px);
+        }
+    
+        40% {
+            transform: translate(-2px, -2px);
+        }
+    
+        60% {
+            transform: translate(2px, 2px);
+        }
+    
+        80% {
+            transform: translate(2px, -2px);
+        }
+    
+        100% {
+            transform: translate(0);
+        }
+    }
     @media (max-width: 768px) {
         justify-content: space-evenly;
     }
