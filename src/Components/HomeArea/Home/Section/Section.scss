@@ -99,7 +99,8 @@
 
     @media (max-width: 768px) {
         .homeParaContainer {
-            justify-content:space-evenly;
+            justify-content: space-evenly;
+
             .paraContainer {
                 h1 {
                     font-size: 46px;
@@ -121,13 +122,12 @@
         .homeIconsContainer {
             position: absolute;
             rotate: 90deg;
-            top: 40px;
+            top: 50px;
             left: 45%;
 
             .SocialIcons {
                 &>* {
                     rotate: 270deg;
-
                 }
             }
         }

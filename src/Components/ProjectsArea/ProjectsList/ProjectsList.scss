@@ -2,7 +2,7 @@
     padding: 8vh 0;
 
     .projectsContainer {
-        padding: 0vh 20vh;
+        padding: 0vh 10vh;
     }
 
     .projectCaption {
@@ -16,10 +16,17 @@
             font-size: x-large;
         }
     }
+
     @media (max-width: 768px) {
-        .projectCaption{
+        .projectCaption {
             padding: 0vh 50vh;
 
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .projectsContainer {
+            padding: 0vh;
         }
     }
 }

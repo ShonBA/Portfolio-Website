@@ -58,17 +58,39 @@
 
         .projectCardData {
             width: 60%;
-
             overflow: hidden;
-            .TechStack{
-                .stackItem{
+
+            .TechStack {
+                .stackItem {
                     padding: 10px 15px;
                 }
             }
         }
+    }
 
+    @media (max-width: 768px) {
+        margin: 5em 25em;
 
+        .projectCardImage {
+            display: flex;
+            justify-content: center;
 
+            img {
+                width: 400px;
+            }
+
+        }
+
+        .projectCardData {
+            width: 60%;
+            overflow: hidden;
+
+            .TechStack {
+                .stackItem {
+                    padding: 10px 15px;
+                }
+            }
+        }
     }
 
 }
