@@ -26,10 +26,8 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
         const entry = entries[0];
         if (entry.isIntersecting) {
             animationRef.current?.classList.add("animate");
-            animationRef.current?.classList.remove("slideOut");
         } else {
             animationRef.current?.classList.remove("animate");
-            animationRef.current?.classList.add("slideOut");
         }
     }
 
