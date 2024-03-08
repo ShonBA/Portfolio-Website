@@ -24,7 +24,6 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         background: white;
         padding: 3rem 4rem;
-        max-width: 80rem;
         text-align: left;
         width: 60%;
         border-radius: 5px;
@@ -65,7 +64,15 @@
                 padding: 0.6em 2em;
             }
         }
+    }
 
-
+    @media (max-width: 768px) {
+        .form{
+        width: 30%;
+        padding: 1.5rem 2rem;
+        label,input,textarea{
+            margin: 0 !important;
+        }
+        }
     }
 }
