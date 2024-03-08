@@ -41,7 +41,7 @@
         margin: 2em 0;
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         flex-direction: column;
         text-align: center;
         margin: 5em 10em;
@@ -68,7 +68,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin: 5em 25em;
 
         .projectCardImage {
@@ -88,6 +88,28 @@
             .TechStack {
                 .stackItem {
                     padding: 10px 15px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin: 5em 22em;
+
+        .projectCardImage {
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .projectCardData {
+            width: 100%;
+
+            .TechStack {
+                .stackItem {
+                    padding: 5px 10px;
+                    width: auto;
                 }
             }
         }

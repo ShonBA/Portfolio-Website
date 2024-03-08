@@ -84,20 +84,15 @@ html,
     }
   }
 
-  @media only screen and (max-width: 576px) {
+  // Tablet
+  @media only screen and (max-width: 768px) {}
+
+
+  // Mobile 
+  @media only screen and (max-width: 480px) {
     .btn-p {
-      font-size: small;
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    .btn-p {
-      font-size: large;
-    }
-  }
-
-  @media only screen and (max-width: 992px) {}
-
-  @media only screen and (max-width: 1200px) {}
 
 }

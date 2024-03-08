@@ -13,6 +13,7 @@
     &>* {
         margin: 0 15px;
     }
+
     a {
         margin: 0 1.8rem;
         color: var(--font);
@@ -23,14 +24,12 @@
         color: var(--white);
     }
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         font-size: medium;
         justify-content: center;
 
-
         a {
             margin: 0 1.5rem;
-
         }
 
         img {
@@ -41,6 +40,12 @@
 
         span {
             display: none;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        a {
+            margin: 0 1rem;
         }
     }
 }

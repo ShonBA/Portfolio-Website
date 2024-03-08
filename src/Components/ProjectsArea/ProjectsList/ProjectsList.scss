@@ -16,15 +16,21 @@
             font-size: x-large;
         }
     }
-
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 480px) {
         .projectCaption {
-            padding: 0vh 50vh;
+            // padding: 0vh 40vh;
 
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 768px) {
+        .projectCaption {
+            padding: 0vh 40vh;
+
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
         .projectsContainer {
             padding: 0vh;
         }

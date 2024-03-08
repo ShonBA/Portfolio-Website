@@ -1,7 +1,7 @@
 .About {
     .aboutPara {
         margin: 0 auto;
-        padding: 10vh 40vh 0 40vh;
+        padding: 5vh 30vh;
 
         h1 {
             font-size: xx-large;
@@ -49,10 +49,10 @@
         }
     }
 
-    @media (max-width: 768px) {
+
+    @media only screen and (max-width: 768px) {
         .aboutPara {
-            margin: 0 auto;
-            padding: 0 55vh;
+            padding: 0 45vh;
         }
 
         .aboutData {
@@ -61,10 +61,16 @@
             align-items: center;
 
             .aboutSection {
+                width: 80%;
+
                 .aboutContentDetails {
                     text-align: center;
                 }
             }
         }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .aboutPara {}
     }
 }
