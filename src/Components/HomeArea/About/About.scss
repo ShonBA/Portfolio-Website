@@ -17,7 +17,6 @@
         &.visible {
             animation: fadeInUp 1s ease-in-out;
         }
-
     }
 
     .aboutData {
@@ -80,7 +79,7 @@
         from {
             transform: translateX(-120%);
         }
-        
+
         to {
             transform: translateX(0);
         }

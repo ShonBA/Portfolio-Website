@@ -9,13 +9,13 @@ function SocialIcons(): JSX.Element {
     return (
         <div className="SocialIcons">
             <NavLink to={appConfig.linkDinUrl}>
-                <CiLinkedin />
+                <CiLinkedin title="Linkedin" />
             </NavLink>
             <NavLink to={appConfig.gitHubUrl}>
-                <VscGithub />
+                <VscGithub title="Github" />
             </NavLink>
             <NavLink to={appConfig.CvUrl}>
-                <IoBookOutline />
+                <IoBookOutline title="CV" />
             </NavLink>
         </div>
     );
