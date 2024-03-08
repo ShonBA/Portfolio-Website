@@ -11,6 +11,10 @@
         color: var(--black);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         font-size: large;
+        &:hover{
+            background-image: url("../../../Assets/Images/home-bg.jpg");
+            background-size: cover;
+        }
     }
 
     @media (max-width: 768px) {

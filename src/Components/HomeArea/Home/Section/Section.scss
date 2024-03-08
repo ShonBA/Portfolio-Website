@@ -28,6 +28,23 @@
             .btn-p {
                 padding: 0.6em 2em;
             }
+
+            h1,
+            h4,
+            h6,
+            .btn-p {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 5s, transform 5s;
+            }
+
+            h1.visible,
+            h4.visible,
+            h6.visible,
+            .btn-p.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .mouseContainer {
@@ -90,6 +107,7 @@
         }
     }
 
+
     @keyframes wheel {
         100% {
             opacity: 0;
@@ -99,7 +117,6 @@
 
     @media only screen and (max-width: 768px) {
         .homeParaContainer {
-            // justify-content: space-around;
             gap: 15vh;
 
             .paraContainer {

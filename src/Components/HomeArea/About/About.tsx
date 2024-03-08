@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useInView } from 'react-intersection-observer';  // Import the useInView hook
 import dataService from "../../../Service/DataService";
 import appConfig from "../../../Utils/AppConfig";
 import TechStack from "../../Common/TechStack/TechStack";
 import "./About.scss";
 
 function About(): JSX.Element {
-
     const [frontendStack, setFrontendStack] = useState<string[]>([]);
+    const [ref, inView] = useInView();  // Initialize the useInView hook
 
     useEffect(() => {
         dataService.getAllTechStack()
@@ -17,7 +18,7 @@ function About(): JSX.Element {
     }, []);
 
     return (
-        <div className="About">
+        <div className={`About ${inView ? 'visible' : ''}`} ref={ref}> {/* Add the 'visible' class when in view */}
             <div className="aboutPara">
                 <h1 className="headerLine">About Me</h1>
                 <p>Welcome! I'm excited to share more about myself, my work, and my current skills, primarily focused on programming and technology.</p>

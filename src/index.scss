@@ -39,7 +39,8 @@ html,
 
   .headerLine {
     position: relative;
-
+    padding-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
     &::after {
       content: '';
       position: absolute;
@@ -50,8 +51,9 @@ html,
       height: 2px;
       background-color: var(--dark-bg);
     }
-
-    padding-bottom: 15px;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 
   @keyframes bouncy {
@@ -83,16 +85,4 @@ html,
       top: 0em;
     }
   }
-
-  // Tablet
-  @media only screen and (max-width: 768px) {}
-
-
-  // Mobile 
-  @media only screen and (max-width: 480px) {
-    .btn-p {
-    }
-  }
-
-
 }
