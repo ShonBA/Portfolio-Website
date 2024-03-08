@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import ProjectModel from "../../../Models/ProjectModel";
@@ -11,7 +11,15 @@ interface ProjectCardProps {
 
 function ProjectsCard(props: ProjectCardProps): JSX.Element {
 
-    const [ref, inView] = useInView();
+    const [screenSize, setScreenSize] = useState<number>(null);
+
+    useEffect(() => {
+        setScreenSize(window.innerWidth)
+    }, [useInView]);
+
+    const [ref, inView] = useInView({
+        triggerOnce: screenSize <= 768 ? true : false
+    });
     const animationRef = useRef<HTMLDivElement>(null);
 
     function handleIntersection(entries: IntersectionObserverEntry[]) {
@@ -30,7 +38,6 @@ function ProjectsCard(props: ProjectCardProps): JSX.Element {
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
-
     return (
         <div className={`ProjectsCard ${inView ? "visible" : ""}`} ref={ref} onClick={() => observer.observe(animationRef.current)}>
             <div className="projectCardImage" ref={animationRef}>
