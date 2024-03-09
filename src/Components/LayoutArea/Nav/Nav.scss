@@ -29,27 +29,41 @@
 
 
     @media only screen and (max-width: 768px) {
-        font-size: medium;
         justify-content: center;
 
-        a {
-            margin: 0 1.5rem;
-        }
+        div {
+            a {
+                margin: 0 1.6rem;
+            }
 
-        img {
-            width: auto;
-            height: 40px;
-            margin-right: 10px;
-        }
+            img {
+                width: auto;
+                height: 40px;
+                margin-right: 10px;
+            }
 
-        span {
-            display: none;
+            span {
+                display: none;
+            }
         }
     }
 
     @media only screen and (max-width: 480px) {
-        a {
-            margin: 0 1rem;
+        font-size: medium;
+        div {
+
+            a {
+                margin: 0 1.2rem;
+            }
+
+            img {
+                width: auto;
+                height: 40px;
+                margin: 0;
+            }
         }
+
     }
+
+
 }
