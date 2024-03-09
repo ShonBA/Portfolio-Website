@@ -5,4 +5,5 @@ function useTitle(text: string) {
         document.title = text;
     }, []);
 }
+
 export default useTitle;
