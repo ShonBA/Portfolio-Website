@@ -37,7 +37,8 @@
         box-sizing: border-box;
 
         .inputContainer {
-            margin: 15px auto;
+            margin: 15px;
+            
 
 
             &> :nth-child(2) {
@@ -54,6 +55,7 @@
                 margin: 10px;
                 line-height: 3rem;
                 font-size: large;
+                margin: 0;
 
                 &::placeholder {
                     font-family: monospace;

@@ -5,7 +5,7 @@ import "./Nav.scss";
 function Nav(): JSX.Element {
     return (
         <div className="Nav">
-            <div>
+            <div className="logoContainer">
                 <Logo />
             </div>
             <div>
