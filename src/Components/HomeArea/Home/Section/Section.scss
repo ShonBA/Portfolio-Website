@@ -1,14 +1,15 @@
 .Section {
+
     .homeParaContainer {
+        padding: 0 10rem;
         height: 100vh;
         background-image: url("../../../../Assets/Images/home-bg.jpg");
         background-size: cover;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
 
         .paraContainer {
-            padding: 50px 15vh;
 
             h1 {
                 width: fit-content;
@@ -95,7 +96,7 @@
                 margin: 10px 0;
             }
 
-            svg {
+            img {
                 width: 36px;
                 height: 36px;
                 transition: transform 0.5s ease;
@@ -117,19 +118,17 @@
 
     @media only screen and (max-width: 768px) {
         .homeParaContainer {
-            gap: 15vh;
-            padding: 0 20vh;
+            padding: 0 27rem;
 
             .paraContainer {
-                padding: 50px 15vh;
 
                 h1 {
-                    font-size: 46px;
+                    font-size: 42px;
 
                 }
 
                 h4 {
-                    font-size: 26px;
+                    font-size: 20px;
                 }
 
                 h6 {
@@ -141,24 +140,17 @@
 
     @media only screen and (max-width: 480px) {
         .homeParaContainer {
-            margin: 5vh 0;
-            padding: 0 40vh;
-
-            justify-content: flex-start;
-
             .paraContainer {
-                padding: 30px 5vh;
-
                 h1 {
-                    font-size: 38px;
+                    font-size: 24px;
                 }
 
                 h4 {
-                    font-size: 20px;
+                    font-size: 18px;
                 }
 
                 h6 {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
@@ -171,7 +163,7 @@
                     margin: 5px 0;
                 }
 
-                svg {
+                img {
                     width: 28px;
                     height: 28px;
                     transition: transform 0.5s ease;

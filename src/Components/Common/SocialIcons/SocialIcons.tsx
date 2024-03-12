@@ -1,21 +1,20 @@
-import { CiLinkedin } from "react-icons/ci";
-import { IoBookOutline } from "react-icons/io5";
-import { VscGithub } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
+import CV from "../../../Assets/Images/CV.png";
+import Github from "../../../Assets/Images/Github.png";
+import Linkedin from "../../../Assets/Images/Linkdin.png";
 import appConfig from "../../../Utils/AppConfig";
-import "./SocialIcons.scss";
 
 function SocialIcons(): JSX.Element {
     return (
         <div className="SocialIcons">
             <NavLink to={appConfig.linkDinUrl}>
-                <CiLinkedin title="Linkedin" />
+                <img src={Linkedin} alt="Linkedin" />
             </NavLink>
             <NavLink to={appConfig.gitHubUrl}>
-                <VscGithub title="Github" />
+                <img src={Github} alt="Github" />
             </NavLink>
             <NavLink to={appConfig.CvUrl}>
-                <IoBookOutline title="CV" />
+                <img src={CV} alt="CV" />
             </NavLink>
         </div>
     );

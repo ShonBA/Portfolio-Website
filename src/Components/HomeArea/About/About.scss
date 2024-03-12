@@ -1,7 +1,7 @@
 .About {
+    padding: 5vh 10vh;
+
     .aboutPara {
-        margin: 0 auto;
-        padding: 5vh 30vh;
 
         h1 {
             font-size: xx-large;
@@ -11,7 +11,7 @@
 
         p {
             font-size: x-large;
-            margin: 0;
+            margin: 0 10vh;
         }
 
         &.visible {
@@ -22,7 +22,6 @@
     .aboutData {
         display: flex;
         justify-content: space-between;
-        margin: 0 10vh;
 
         .aboutSection {
             width: 45%;
@@ -63,8 +62,6 @@
         }
     }
 
-
-
     @keyframes slideInFromRight {
         from {
             transform: translateX(120%);
@@ -99,18 +96,31 @@
 
 
     @media only screen and (max-width: 768px) {
-        .aboutPara {
-            padding: 0 45vh;
-        }
+        padding: 5vh 38vh;
 
         .aboutData {
-            padding: 0 25vh;
+
             flex-direction: column;
             align-items: center;
 
             .aboutSection {
                 width: 80%;
 
+                .aboutContentDetails {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        padding: 0 40vh;
+
+        .aboutData {
+            flex-direction: column;
+            align-items: center;
+
+            .aboutSection {
                 .aboutContentDetails {
                     text-align: center;
                 }

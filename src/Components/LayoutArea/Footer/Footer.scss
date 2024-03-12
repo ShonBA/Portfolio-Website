@@ -1,35 +1,48 @@
 .Footer {
+    padding: 0 2rem;
     height: 100%;
     background-color: var(--dark-bg);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: larger;
+    box-sizing: border-box;
 
     div {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 10px;
+        gap: 20px;
 
         a {
             text-decoration: none;
             color: var(--black);
         }
 
-        svg {
+        img {
             height: 25px;
-            width: 35px;
+            width: 25px;
         }
+    }
+    .cpContainer{
+        height: 100%;
     }
 
     @media (max-width: 768px) {
-        font-size: small;
 
         &>* {
-            display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
         }
+
+        .menuContainer {
+            &>* {
+                gap: 20px;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        flex-direction: column-reverse;
+        padding: 10px 0;
+        gap: 20px;
     }
 }

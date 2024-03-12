@@ -1,6 +1,6 @@
 import { useForm } from "@formspree/react";
-import "./Contact.scss";
 import { useInView } from "react-intersection-observer";
+import "./Contact.scss";
 
 function Contact(): JSX.Element {
 

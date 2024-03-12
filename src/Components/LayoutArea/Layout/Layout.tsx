@@ -11,7 +11,6 @@ function Layout(): JSX.Element {
             </nav>
             <main>
                 <Home />
-                {/* <Router /> */}
             </main>
             <footer>
                 <Footer />

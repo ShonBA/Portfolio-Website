@@ -1,17 +1,16 @@
-import { FaRegCopyright } from "react-icons/fa6";
+import Copyright from "../../../Assets/Images/CopyRights.png";
+import SocialIcons from "../../Common/SocialIcons/SocialIcons";
 import Menu from "../../NavArea/Menu/Menu";
 import "./Footer.scss";
-import SocialIcons from "../../Common/SocialIcons/SocialIcons";
-
 
 function Footer(): JSX.Element {
     return (
         <div className="Footer">
-            <div>
-                <FaRegCopyright className="copyright" />
+            <div className="cpContainer">
+                <img src={Copyright} alt="Copyright" />
                 <span> 2024 Shon Benayoun</span>
             </div>
-            <div>
+            <div className="menuContainer">
                 <SocialIcons />
                 <Menu />
             </div>

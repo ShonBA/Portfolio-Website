@@ -3,7 +3,7 @@ import "./TechStack.scss";
 interface TechStackProps {
     stack: string[]
 }
-function TechStack(props:TechStackProps): JSX.Element {
+function TechStack(props: TechStackProps): JSX.Element {
 
 
     return (
