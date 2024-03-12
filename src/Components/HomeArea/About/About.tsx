@@ -27,16 +27,16 @@ function About(): JSX.Element {
             </div>
             <div className="aboutData">
                 <div className={`aboutSection ${aboutSectionInView ? 'visible_left' : ''}`} ref={aboutSectionRef} >
-                    <h4 className="headerLine">Get To Know Me!</h4>
-                    <p className="aboutContentDetails">
-                        I'm a <strong>Frontend Web Developer</strong> dedicated to crafting and managing the frontend of websites and web applications, contributing to the overall success of the products. Explore some of my projects in the <strong>Projects</strong> section.
-                    </p>
-                    <p className="aboutContentDetails">
-                        Sharing knowledge is a passion of mine. I regularly post content related to my experiences and insights in <strong>Web Development</strong>. Connect or follow me on <NavLink to={appConfig.linkDinUrl}>LinkedIn</NavLink> and <NavLink to={appConfig.gitHubUrl}>GitHub</NavLink>, where I share valuable insights into web development and programming.
-                    </p>
-                    <p className="aboutContentDetails">
-                        I'm currently open to <strong>job opportunities</strong> that align with my skills and experiences. If you have an exciting opportunity, matching my profile, feel free to <strong>reach out</strong>.
-                    </p>
+                <h4 className="headerLine">Discover My Passion for Frontend Development!</h4>
+<p className="aboutContentDetails">
+    As a dedicated <strong>Fullstack WEB Developer</strong>, I thrive on the art of shaping and managing the visual aspects of websites and web applications. My commitment extends to enhancing overall product success through meticulous frontend craftsmanship. Delve into my portfolio in the <strong>Projects</strong> section to witness the impact of my work.
+</p>
+<p className="aboutContentDetails">
+    Fueling my passion for web development, I actively share my experiences and insights in the dynamic field. Engage with my content covering a spectrum of topics in <strong>Web Development</strong>. Join me on the journey of continuous learning and growth by connecting on <NavLink to={appConfig.linkDinUrl}>LinkedIn</NavLink> and exploring my code on <NavLink to={appConfig.gitHubUrl}>GitHub</NavLink>. Your presence in these spaces is an opportunity to dive into the world of programming wisdom.
+</p>
+<p className="aboutContentDetails">
+    Currently, my professional horizons are open to exciting <strong>job opportunities</strong> aligned with my skill set and experiences. If you have an enticing prospect that matches my profile, I welcome you to <strong>reach out</strong>. Let's explore how we can create something extraordinary together.
+</p>
                     <HashLink className={"btn-p"} smooth to={"#contactMainSection"}>Contact</HashLink>
                 </div>
                 <div className={`aboutSection ${aboutSkillsInView ? 'visible_right' : ''}`} ref={aboutSkillsRef}>
