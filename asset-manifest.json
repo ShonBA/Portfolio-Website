@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.d9c3d6d2.css",
-    "main.js": "./static/js/main.fd0ae462.js",
+    "main.css": "./static/css/main.9d5cc219.css",
+    "main.js": "./static/js/main.e68dc33e.js",
     "static/js/453.aac68abc.chunk.js": "./static/js/453.aac68abc.chunk.js",
     "static/media/nav.jpeg": "./static/media/nav.2f7075d39a317d9bc616.jpeg",
     "static/media/Crypto.png": "./static/media/Crypto.245e1af31deb01c8cd93.png",
@@ -10,17 +10,20 @@
     "static/media/ExploreEase.png": "./static/media/ExploreEase.27c05b0bd5ae5e5cdae5.png",
     "static/media/Logo.png": "./static/media/Logo.4f21507c8a2bd423e0f8.png",
     "static/media/Github.png": "./static/media/Github.13dfc968edb4ab448a05.png",
+    "static/media/Whatsapp.png": "./static/media/Whatsapp.2f9886ca140364e350cf.png",
     "static/media/CopyRights.png": "./static/media/CopyRights.a3a113094b966bb3a746.png",
+    "static/media/Telephone.png": "./static/media/Telephone.35be8129449d5dbfd4da.png",
     "static/media/CV.png": "./static/media/CV.c3d1e89f5cc454ddde57.png",
+    "static/media/Email.png": "./static/media/Email.d92089def67fd6f468fc.png",
     "static/media/Linkdin.png": "./static/media/Linkdin.ec488c9141e0c4f189dc.png",
     "static/media/home-bg.jpg": "./static/media/home-bg.3fbd60cf5e6cfbca0db7.jpg",
     "index.html": "./index.html",
-    "main.d9c3d6d2.css.map": "./static/css/main.d9c3d6d2.css.map",
-    "main.fd0ae462.js.map": "./static/js/main.fd0ae462.js.map",
+    "main.9d5cc219.css.map": "./static/css/main.9d5cc219.css.map",
+    "main.e68dc33e.js.map": "./static/js/main.e68dc33e.js.map",
     "453.aac68abc.chunk.js.map": "./static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9c3d6d2.css",
-    "static/js/main.fd0ae462.js"
+    "static/css/main.9d5cc219.css",
+    "static/js/main.e68dc33e.js"
   ]
 }
