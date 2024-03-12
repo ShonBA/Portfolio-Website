@@ -23,7 +23,12 @@
             width: 25px;
         }
     }
-    .cpContainer{
+
+    .menuContainer {
+        flex-direction: column-reverse;
+    }
+
+    .cpContainer {
         height: 100%;
     }
 
@@ -40,6 +45,7 @@
             }
         }
     }
+
     @media (max-width: 480px) {
         flex-direction: column-reverse;
         padding: 10px 0;

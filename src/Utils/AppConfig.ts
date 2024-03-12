@@ -6,7 +6,7 @@ class AppConfig {
     // Social URL'S
     public readonly linkDinUrl = "https://www.linkedin.com/in/shonbenayoun/";
     public readonly gitHubUrl = "https://github.com/ShonBA";
-    public readonly CvUrl = "https://drive.google.com/file/d/1RWPiDFizusmxvm7KZPK986HwlgciwAYK/view?usp=sharing";
+    public readonly CvUrl = "https://drive.google.com/file/d/1KSdzDcLEtGn_VmN_Roewae4OUWxw6GrQ/view?usp=sharing";
     // Routes
     public readonly HomeRoute: string = "/home";
     public readonly AboutRoute: string = "/about";
