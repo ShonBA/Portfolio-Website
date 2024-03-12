@@ -1,5 +1,5 @@
 .About {
-    padding: 5vh 10vh;
+    padding: 5vh 15vh;
 
     .aboutPara {
 
@@ -11,7 +11,6 @@
 
         p {
             font-size: x-large;
-            margin: 0 10vh;
         }
 
         &.visible {
@@ -96,7 +95,7 @@
 
 
     @media only screen and (max-width: 768px) {
-        padding: 5vh 38vh;
+        padding: 5vh 27vh;
 
         .aboutData {
 
@@ -113,8 +112,8 @@
         }
     }
 
-    @media only screen and (max-width: 480px) {
-        padding: 0 40vh;
+    @media only screen and (max-width: 430px) {
+        padding: 5vh 35vh;
 
         .aboutData {
             flex-direction: column;
