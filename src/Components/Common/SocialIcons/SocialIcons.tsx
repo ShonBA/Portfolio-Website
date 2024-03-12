@@ -19,13 +19,13 @@ function SocialIcons(): JSX.Element {
             <NavLink to={appConfig.CvUrl}>
                 <img src={CV} alt="CV" />
             </NavLink>
-            <NavLink to={`tel:+972-54-761-1313`}>
+            <NavLink to={appConfig.phoneUrl}>
                 <img src={Phone} alt="Phone" />
             </NavLink>
-            <NavLink to={`https://wa.me/9720547611313?text=היי, אשמח לקבל הצעת מחיר!`}>
+            <NavLink to={appConfig.whatsappUrl}>
                 <img src={Whatsapp} alt="Whatsapp" />
             </NavLink>
-            <NavLink to={`mailto:shonba98@gmail.com`}>
+            <NavLink to={appConfig.emailUrl}>
                 <img src={Mail} alt="Mail" />
             </NavLink>
         </div>
